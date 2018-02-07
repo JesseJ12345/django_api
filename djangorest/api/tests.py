@@ -4,10 +4,11 @@
 # api/tests.py
 
 # Add these imports at the top
+from django.test import TestCase
 from rest_framework.test import APIClient
 from rest_framework import status
 from django.core.urlresolvers import reverse
-
+from .models import Bucketlist
 # Define this after the ModelTestCase
 class ViewTestCase(TestCase):
     """Test suite for the api views."""
